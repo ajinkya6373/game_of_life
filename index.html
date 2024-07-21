@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conway's Game of Life</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <h1>Conway's Game of Life</h1>
+    <canvas id="gameCanvas" width="800" height="400"></canvas>
+    <div class="controls">
+        <div class="sliders">
+            <div class="slider-container">
+                <label for="speedSlider"><img src="/assets/speed.png"></label>
+                <input type="range" id="speedSlider" min="50" max="1000" value="200">
+            </div>
+            <div class="slider-container">
+                <label for="zoomSlider"><img src="/assets/grid.png"></label>
+                <input type="range" id="zoomSlider" min="10" max="40" value="20">
+            </div>
+            <div class="steps-container">
+                <img src="/assets/steps.png">
+                <span id="stepsCounter">200</span>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="startStopButton">Start</button>
+            <button id="nextButton">Next</button>
+            <button id="resetButton">Reset</button>
+            <button id="randomButton">Random Start</button>
+            <button id="addNameButton">Add Name</button>
+        </div>
+    </div>
+    <script src="gameOfLife.js"></script>
+</body>
+</html>
